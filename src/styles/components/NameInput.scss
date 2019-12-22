@@ -1,0 +1,59 @@
+.content-name-input {
+    .label-row {
+        padding: 1px;
+        display: flex;
+        padding-bottom: 21px;
+        .input-label {
+            font-weight: 300;
+            font-size: 1.2em;
+            flex: 5;
+        }
+        .max-char-info {
+            font-weight: 300;
+            font-size: 0.8em;
+            flex: 5;
+            text-align: right;
+            color: #C6C6C6;
+            &.warning {
+                color: #FC5A5A;
+            }
+        }
+    }
+
+    input, .content-name-input {
+        border: none;
+        border-bottom: solid 1px #F7A246;
+        padding-left: 0;
+        min-height: 2em;
+        width: 100%;
+        &:focus {
+            outline: none;
+            user-select: all;
+        }
+        &::selection {
+            background: #F7A246;
+            color: #FFFFFF;
+        }
+    }
+
+    .alert-container {
+        margin-bottom: 1em;
+    }
+    .info {
+        padding-left: 1px;
+    }
+
+    .warning-msg {
+        display: flex;
+        padding-top: 10px;
+        span{
+            &.icon {
+                margin-right: 1em;
+            }
+            p {
+                color: #FC5A5A;
+                font-size: 1em;
+            }   
+        }
+    }
+}

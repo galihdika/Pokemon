@@ -1,0 +1,85 @@
+$baseColor: blue;
+$hoverColor: lightblue;
+
+.modal {
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) { 
+  .modal:before {
+    display: inline-block;
+    vertical-align: middle;
+    content: " ";
+    height: 100%;
+  }
+}
+
+
+.modal-dialog {
+  display: inline-block;
+  text-align: left;
+  vertical-align: middle;
+}
+
+.modal-header {
+  border: none;
+
+  .modal-title {
+      color: $baseColor;
+      font-family: 'Arial';
+      font-weight: bold;
+      font-size: 20px;
+      .close{
+          font-size: 21px;
+
+          .focus, &:focus{
+              color:#cccccc;
+          }
+      
+          &:hover{
+              color:#808080;
+          }
+      }
+  }
+}
+
+.modal-footer {
+  border: none;
+
+  .modal-btn-primary {
+      border: 6px;
+      height: 36px;
+      padding: 0 30px 0 30px;
+      background-color: $baseColor;
+      color: white;
+  
+      &:hover{
+          background-color: $hoverColor;
+      }
+      &:disabled {
+          background: #808080;
+          color: #B3B3B3;
+      }
+  }
+
+  .modal-btn-secondary {
+    background-color: #ffffff;
+    color: $baseColor;
+    height: 36px;
+    border-color: #ffffff;
+    padding: 0 30px 0 30px;
+    box-shadow: none;
+    border-radius: 4px;
+    outline: none;
+      &:hover{
+        border-color: $baseColor;
+      }
+      &:active:focus {
+        border: 1px solid $baseColor;
+        box-shadow: inset 1px 1px 3px #AAAAAA;
+        outline: none;
+        background-color: #ffffff;
+        color: $baseColor;
+      }
+  }
+}

@@ -1,0 +1,16 @@
+.header-container{
+    height: 10vh;
+    .header-layout{
+        position: fixed;
+        width: 100%;
+        height: 10vh;
+        display: flex;
+        align-items: center;
+        background-color: yellow;
+    
+        .header-menu{
+            margin: 5px;
+            padding: 3px;
+        }
+    }
+}
